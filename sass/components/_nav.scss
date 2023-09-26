@@ -1,0 +1,37 @@
+.navbar{
+    background-color: #615e5e7a;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    .logo{
+        width: 50px;
+        height: auto;
+        margin-left: 100px;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        margin-right: 50px;
+    }
+    a{
+        color: white;
+        margin-right: 50px;
+        text-decoration: none;
+        position: relative;
+
+    }
+    a::before{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 0%;
+        height: 2px;
+        background-color: white;
+        transition: .3s;
+    }
+    a:hover::before{
+        width: 100%;
+    }
+}
