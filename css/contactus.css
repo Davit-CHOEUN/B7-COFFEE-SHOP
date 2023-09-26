@@ -1,0 +1,46 @@
+.index-Box {
+  color: white;
+  width: 84%;
+  margin: 10px 0 0 21px;
+}
+.index-Box h4 {
+  padding: 5px 0;
+  margin: 0px;
+}
+.index-Box input {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.index-Box #messege {
+  height: 10vh;
+}
+
+.rating-star h4 {
+  color: white;
+  padding: 10px 0 0 23px;
+  margin: 0;
+}
+.rating-star .rating {
+  width: 150px;
+  display: flex;
+  margin: 5px 0 0 23px;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  width: 89%;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 21px;
+}
+
+body {
+  background-color: black;
+}

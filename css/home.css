@@ -151,8 +151,7 @@ body {
   margin: 0px 100px;
   display: grid;
   grid-auto-flow: column;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+  column-gap: 50px;
   overflow: hidden;
 }
 .slide-container .product-slide div img {
