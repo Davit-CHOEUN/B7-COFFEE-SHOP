@@ -13,7 +13,6 @@
   display: flex;
   list-style: none;
   margin-right: 50px;
-  margin-top: 15px;
 }
 .navbar a {
   color: white;
@@ -164,4 +163,4 @@ body {
   border-radius: 5px;
   padding: 10px;
   margin: 10px 21px;
-}/*# sourceMappingURL=contactus.css.map */
+}
