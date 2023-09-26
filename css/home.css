@@ -187,17 +187,6 @@ body {
   right: -22px;
 }
 
-.quote-container {
+.promotion-container {
   margin: 100px;
-  display: flex;
-  justify-content: space-between;
 }
-.quote-container .person {
-  width: 45%;
-}
-.quote-container .quote {
-  display: flex;
-  align-items: center;
-  width: 45%;
-  font-size: 24px;
-}/*# sourceMappingURL=home.css.map */
