@@ -3,11 +3,14 @@
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
 }
 .navbar .logo {
   width: 50px;
   height: auto;
   margin-left: 100px;
+  border-radius: 50%;
 }
 .navbar ul {
   display: flex;
@@ -105,10 +108,14 @@ body {
   padding: 0%;
 }
 
+body {
+  background-image: url(/image/home/transparent.png);
+}
+
 .bg {
   width: 100%;
   height: 80vh;
-  background: url(/image/home/background.png);
+  background: url(/image/home/background-website.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -132,10 +139,12 @@ body {
 .aboutus .description .costumer {
   width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 .aboutus .enviroment {
   width: 45%;
   height: 100vh;
+  border-radius: 5px;
 }
 
 .product-title {
@@ -148,14 +157,13 @@ body {
   position: relative;
 }
 .slide-container .product-slide {
-  margin: 0px 100px;
-  display: grid;
-  grid-auto-flow: column;
-  column-gap: 50px;
+  margin: 0px 150px;
+  display: flex;
+  justify-content: space-between;
   overflow: hidden;
 }
 .slide-container .product-slide div img {
-  width: 350px;
+  width: 300px;
   height: 300px;
   border-radius: 5px;
 }
@@ -182,11 +190,67 @@ body {
 }
 .slide-container i:first-child {
   left: -22px;
+  margin-left: 100px;
 }
 .slide-container i:last-child {
   right: -22px;
+  margin-right: 100px;
 }
 
 .promotion-container {
   margin: 100px;
+}
+.promotion-container h2 {
+  margin-bottom: 50px;
+}
+.promotion-container .promotion {
+  display: flex;
+  justify-content: space-between;
+}
+.promotion-container .promotion div {
+  width: 30%;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.164);
+  border-radius: 10px;
+}
+.promotion-container .promotion .coupon {
+  background-image: url(/image/home/coupon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.promotion-container .promotion .coupon .coupon-p1 {
+  margin: 100px 10px 10px 0px;
+  font-size: 36px;
+  text-align: center;
+}
+.promotion-container .promotion .coupon .coupon-p2 {
+  font-size: 36px;
+  margin: 40px 10px 10px 0px;
+  text-align: center;
+}
+.promotion-container .promotion .count {
+  background-image: url(/image/home/buy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.promotion-container .promotion .count .coupon-p1 {
+  margin: 60px 10px 10px 0px;
+  font-size: 36px;
+  text-align: center;
+}
+.promotion-container .promotion .count .coupon-p2 {
+  font-size: 36px;
+  margin: 45px 10px 10px 0px;
+  text-align: center;
+}
+.promotion-container .promotion .descript {
+  background-image: url(/image/home/descript.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.promotion-container .promotion .descript p {
+  font-size: 24px;
+  width: 45%;
+  margin-top: 130px;
+  margin-left: 110px;
 }

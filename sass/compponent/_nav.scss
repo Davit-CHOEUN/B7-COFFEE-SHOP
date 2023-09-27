@@ -3,11 +3,14 @@
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 
     .logo{
         width: 50px;
         height: auto;
         margin-left: 100px;
+        border-radius: 50%;
     }
     ul{
         display: flex;
