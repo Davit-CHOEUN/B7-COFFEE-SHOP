@@ -41,30 +41,6 @@
     a:hover::before{
         width: 100%;
     }
-    .dropdown_menu{
-        display: none;
-        ul{
-            background-color: #615e5e7a;
-            display: block;
-            margin: 0%;
-            padding: 10px;
-            li{
-                list-style: none;
-                margin: 0%;
-                padding: 10px;
-                a{
-                    margin: 0%;
-                    padding: 0%;
-                    text-align: center;
-                }
-            }
-            li:hover{
-                display: block;
-                position: absolute;
-                left: 75%;
-                top: 100%;
-            }
-        }
-    }
+
 
 }
