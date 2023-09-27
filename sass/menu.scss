@@ -1,6 +1,6 @@
 @import "compponent/nav";
 @import "main";
-
+@import "compponent/footer";
 body{
     background-color: rgb(226, 226, 226);
 }
@@ -42,7 +42,11 @@ h1{
         background-color: white;
         width: 300px;
         img{
-            width: 280px;
+            width: 200px;
+        }
+        .hotcup{
+            margin-top: 85px;
+            
         }
        
     }

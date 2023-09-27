@@ -43,6 +43,41 @@ body {
   padding: 0%;
 }
 
+footer {
+  background-color: #3a3a3a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.content a {
+  margin: 0px 20px;
+}
+
+.social {
+  margin-top: 30px;
+}
+.social img {
+  width: 30px;
+  margin: 0px 20px;
+}
+.social .tw {
+  width: 40px;
+  margin: 0px 20px;
+}
+
+.line p {
+  color: white;
+}
+
 body {
   background-color: rgb(226, 226, 226);
 }
@@ -88,5 +123,8 @@ h1 {
   width: 300px;
 }
 .menu-hot-coffee div img {
-  width: 280px;
+  width: 200px;
+}
+.menu-hot-coffee div .hotcup {
+  margin-top: 85px;
 }
