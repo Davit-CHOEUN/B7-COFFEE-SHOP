@@ -12,10 +12,13 @@
   margin-left: 100px;
   border-radius: 50%;
 }
-.navbar ul {
+.navbar .ul-nav {
   display: flex;
   list-style: none;
   margin-right: 50px;
+}
+.navbar .ul-nav i {
+  position: relative;
 }
 .navbar a {
   color: white;
@@ -35,6 +38,31 @@
 }
 .navbar a:hover::before {
   width: 100%;
+}
+.navbar .dropdown_menu {
+  display: none;
+}
+.navbar .dropdown_menu ul {
+  background-color: rgba(97, 94, 94, 0.4784313725);
+  display: block;
+  margin: 0%;
+  padding: 10px;
+}
+.navbar .dropdown_menu ul li {
+  list-style: none;
+  margin: 0%;
+  padding: 10px;
+}
+.navbar .dropdown_menu ul li a {
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+}
+.navbar .dropdown_menu ul li:hover {
+  display: block;
+  position: absolute;
+  left: 75%;
+  top: 100%;
 }
 
 body {
