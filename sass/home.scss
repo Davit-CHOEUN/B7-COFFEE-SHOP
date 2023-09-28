@@ -13,6 +13,9 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+// ------------------------- About us --------------
+
 .aboutus{
     display: flex;
     justify-content: space-between;
@@ -26,12 +29,14 @@ body{
         p{
             font-size: 22px;
             margin: 0%;
+
             
         }
         .costumer{
             width: 100%;
             height: auto;
             border-radius: 5px;
+
         }
     }
     .enviroment{
@@ -40,6 +45,9 @@ body{
         border-radius: 5px;
     }
 }
+
+// ---------------------------------- Product ----------------------
+
 .product-title{
     margin: 100px 0px 50px 100px;
 }
@@ -55,7 +63,7 @@ body{
         div{
             img{
                 width: 300px;
-                height: 300px;
+                height: 280px;
                 border-radius: 5px;
             }
             p{
@@ -92,60 +100,275 @@ body{
         margin-right: 100px;
     }
 }
-.promotion-container{
+
+//--------------------- Promotion ---------------
+
+// .promotion-container{
+//     margin: 100px;
+//     h2{
+//         margin-bottom: 50px;
+//     }
+//     .promotion{
+//     display: flex;
+//     justify-content: space-between;
+//     div{
+//         width: 30%;
+//         height: 450px;
+//         border-radius: 10px;
+//     }
+//     .coupon{
+//         background-image: url(/image/home/coupon.jpg);
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         .coupon-p1{
+//             margin:105px 10px 10px 0px ;
+//             font-size: 36px;
+//             text-align: center;
+//         }
+//         .coupon-p2{
+//             font-size: 36px;
+//             margin: 39px 10px 10px 0px;
+//             text-align: center;
+//         }
+//     }
+//     .count{
+//         background-image: url(/image/home/buy.jpg);
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         .coupon-p1{
+//             margin:60px 10px 10px 0px ;
+//             font-size: 36px;
+//             text-align: center;
+//         }
+//         .coupon-p2{
+//             font-size: 36px;
+//             margin: 45px 10px 10px 0px;
+//             text-align: center;
+//         }
+//     }
+//     .descript{
+//         background-image: url(/image/home/descript.jpg);
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         p{
+//             font-size: 24px;
+//             width: 45%;
+//             margin-top: 130px;
+//             margin-left: 110px;
+//         }
+//     }
+//     }
+
+// }
+.promo-container{
     margin: 100px;
     h2{
-        margin-bottom: 50px;
+        margin: 50px 0px;
     }
-    .promotion{
-    display: flex;
-    justify-content: space-between;
-    div{
-        width: 30%;
-        height: 450px;
-        background-color: rgba(0, 0, 0, 0.164);
-        border-radius: 10px;
-    }
-    .coupon{
-        background-image: url(/image/home/coupon.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        .coupon-p1{
-            margin:100px 10px 10px 0px ;
-            font-size: 36px;
-            text-align: center;
+    .promo{
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 30%;
+            height: 450px;
+            border-radius: 5px;
         }
-        .coupon-p2{
-            font-size: 36px;
-            margin: 40px 10px 10px 0px;
-            text-align: center;
-        }
-    }
-    .count{
-        background-image: url(/image/home/buy.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        .coupon-p1{
-            margin:60px 10px 10px 0px ;
-            font-size: 36px;
-            text-align: center;
-        }
-        .coupon-p2{
-            font-size: 36px;
-            margin: 45px 10px 10px 0px;
-            text-align: center;
-        }
-    }
-    .descript{
-        background-image: url(/image/home/descript.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        p{
-            font-size: 24px;
-            width: 45%;
-            margin-top: 130px;
-            margin-left: 110px;
-        }
-    }
     }
 }
+
+@media(min-width:430px) and (max-width:834px){
+
+    .bg{
+        width: 834px;
+        height: 35vh;
+    }
+
+    //-------------------- Aboutus ----------------
+
+    .aboutus{
+        margin: 50px;
+        height: 65vh;
+        .description{
+            p{
+                font-size: 24px;
+            }
+        }
+        .enviroment{
+            height: 65vh;
+        }
+    }
+
+    //--------------------- Product ----------------
+
+    .product-title{
+        margin: 100px 0px 50px 50px;
+    }
+    .slide-container{
+        .product-slide{
+            margin: 0px 70px;
+            div{
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+        i{
+            width: 30px;
+            height: 30px;
+    
+        }
+        i:first-child{
+            margin-left: 50px;
+        }
+        i:last-child{
+            margin-right: 50px;
+        }
+    }
+
+    //  ----------------------- Promotion ----------------------
+
+    .promotion-container{
+        margin: 100px 50px 0px 50px;
+        .promotion{
+            display: flex;
+            flex-wrap: wrap;
+            height: 950px;
+            div{
+                width: 47%;
+            }
+            .coupon{
+                .coupon-p1{
+                    margin:115px 10px 10px 0px ;
+                    font-size: 32px;
+                    text-align: center;
+                }
+                .coupon-p2{
+                    font-size: 30px;
+                    margin: 40px 10px 10px 0px;
+                    text-align: center;
+                }
+            }
+            .descript{
+                margin-left: 26%;
+            }
+        }
+    
+    }
+    
+    .promo-container{
+        margin: 50px;
+        h2{
+            margin: 50px 0px;
+        }
+        .promo{
+            display: flex;
+            justify-content: space-between;
+            img{
+                width: 30%;
+                height: 400px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+}
+@media(min-width:0px) and (max-width:430px){
+
+    .bg{
+        width: 430px;
+        height: 20vh;
+    }
+
+    //-------------------- Aboutus ----------------
+
+    .aboutus{
+        margin: 20px;
+        height: 775px;
+        .description{
+            p{
+                font-size: 20px;
+            }
+        }
+        .enviroment{
+            height: 65vh;
+        }
+    }
+
+    //--------------------- Product ----------------
+
+    .product-title{
+        margin: 100px 0px 50px 50px;
+    }
+    .slide-container{
+        .product-slide{
+            margin: 0px 70px;
+            div{
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+        i{
+            width: 30px;
+            height: 30px;
+    
+        }
+        i:first-child{
+            margin-left: 50px;
+        }
+        i:last-child{
+            margin-right: 50px;
+        }
+    }
+
+    //  ----------------------- Promotion ----------------------
+
+    .promotion-container{
+        margin: 100px 50px 0px 50px;
+        .promotion{
+            display: flex;
+            flex-wrap: wrap;
+            height: 950px;
+            div{
+                width: 47%;
+            }
+            .coupon{
+                .coupon-p1{
+                    margin:115px 10px 10px 0px ;
+                    font-size: 32px;
+                    text-align: center;
+                }
+                .coupon-p2{
+                    font-size: 30px;
+                    margin: 40px 10px 10px 0px;
+                    text-align: center;
+                }
+            }
+            .descript{
+                margin-left: 26%;
+            }
+        }
+    
+    }
+
+    .promo-container{
+        margin: 50px;
+        h2{
+            margin: 50px 0px;
+        }
+        .promo{
+            display: flex;
+            justify-content: space-between;
+            img{
+                width: 30%;
+                height: 400px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+}
+
+

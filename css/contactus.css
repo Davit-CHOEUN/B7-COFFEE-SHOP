@@ -30,7 +30,6 @@ nav .dropdown {
   margin: 0%;
   padding: 13px 10px;
   left: 100;
-  top: 100%;
   border-radius: 0px 0px 5px 5px;
 }
 nav .dropdown li {
@@ -62,7 +61,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 50px 30px 30px 30px;
 }
 
 a {
@@ -195,4 +194,8 @@ body {
 
 .about-us {
   display: none;
+}
+
+.dropdown {
+  top: 10%;
 }
