@@ -133,6 +133,28 @@ a {
   color: white;
 }
 
+@media (min-width: 0px) and (max-width: 430px) {
+  footer {
+    padding: 30px 20px 30px 20px;
+  }
+  footer a {
+    font-size: 10px;
+  }
+  footer .content a {
+    margin: 0px 10px;
+  }
+  footer .social {
+    margin-top: 20px;
+  }
+  footer .social img {
+    width: 30px;
+    margin: 0px 20px;
+  }
+  footer .social .tw {
+    width: 40px;
+    margin: 0px 20px;
+  }
+}
 body {
   background-color: rgb(224, 224, 224);
 }
