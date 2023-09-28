@@ -55,6 +55,43 @@ nav a:hover::before {
   width: 100%;
 }
 
+@media (min-width: 0px) and (max-width: 430px) {
+  nav {
+    padding: 10px 10px;
+  }
+  nav ul {
+    display: flex;
+    position: relative;
+  }
+  nav ul li {
+    list-style: none;
+    margin-left: 20px;
+  }
+  nav ul li:hover .dropdown {
+    display: block;
+  }
+  nav .logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  nav .dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgba(121, 118, 118, 0.5333333333);
+    margin: 0%;
+    padding: 13px 10px;
+    left: 100;
+    border-radius: 0px 0px 5px 5px;
+  }
+  nav .dropdown li {
+    margin: 0%;
+    padding: 7px 0px;
+  }
+  nav .dropdown li a {
+    font-size: 12px;
+  }
+}
 .costumer-feedback {
   display: flex;
   justify-content: space-between;
@@ -85,7 +122,7 @@ nav a:hover::before {
   color: rgb(212, 212, 7);
 }
 
-@media (min-width: 430px) and (max-width: 834px) {
+@media (min-width: 431px) and (max-width: 834px) {
   .costumer-feedback {
     margin: 100px 50px;
     height: 390px;
@@ -114,6 +151,34 @@ nav a:hover::before {
   }
   .costumer-feedback .custumer3 {
     margin-left: 26%;
+  }
+}
+@media (min-width: 0px) and (max-width: 430px) {
+  .costumer-feedback {
+    margin: 80px 20px;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .costumer-feedback .costumer {
+    margin-top: 30px;
+    padding: 20px;
+    width: 100%;
+    height: 150px;
+  }
+  .costumer-feedback .costumer img {
+    height: 150px;
+  }
+  .costumer-feedback .costumer .feedback {
+    justify-content: center;
+    align-items: self-end;
+  }
+  .costumer-feedback .costumer .feedback p {
+    font-size: 14px;
+  }
+  .costumer-feedback .costumer .feedback i {
+    width: 10px;
+    margin-left: 5px;
   }
 }
 footer {
@@ -337,7 +402,6 @@ body {
     border-radius: 5px;
   }
 }
-<<<<<<< HEAD
 @media (min-width: 0px) and (max-width: 430px) {
   .bg {
     width: 430px;
@@ -354,24 +418,26 @@ body {
     height: 65vh;
   }
   .product-title {
-    margin: 100px 0px 50px 50px;
+    margin: 100px 0px 50px 20px;
   }
   .slide-container .product-slide {
-    margin: 0px 70px;
+    margin: 0px 20px;
   }
   .slide-container .product-slide div img {
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
+  }
+  .slide-container .product-slide div p {
+    font-size: 14px;
+  }
+  .slide-container .product-slide .milk-tea {
+    margin-left: 15px;
+  }
+  .slide-container .product-slide .bakery {
+    margin-left: 15px;
   }
   .slide-container i {
-    width: 30px;
-    height: 30px;
-  }
-  .slide-container i:first-child {
-    margin-left: 50px;
-  }
-  .slide-container i:last-child {
-    margin-right: 50px;
+    display: none;
   }
   .promotion-container {
     margin: 100px 50px 0px 50px;
@@ -398,10 +464,10 @@ body {
     margin-left: 26%;
   }
   .promo-container {
-    margin: 50px;
+    margin: 50px 20px;
   }
   .promo-container h2 {
-    margin: 50px 0px;
+    margin: 20px 0px;
   }
   .promo-container .promo {
     display: flex;
@@ -409,45 +475,7 @@ body {
   }
   .promo-container .promo img {
     width: 30%;
-    height: 400px;
+    height: 200px;
     border-radius: 5px;
   }
 }
-=======
-.promotion-container .promotion .coupon .coupon-p1 {
-  margin: 100px 10px 10px 0px;
-  font-size: 36px;
-  text-align: center;
-}
-.promotion-container .promotion .coupon .coupon-p2 {
-  font-size: 36px;
-  margin: 40px 10px 10px 0px;
-  text-align: center;
-}
-.promotion-container .promotion .count {
-  background-image: url(/image/home/buy.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.promotion-container .promotion .count .coupon-p1 {
-  margin: 60px 10px 10px 0px;
-  font-size: 36px;
-  text-align: center;
-}
-.promotion-container .promotion .count .coupon-p2 {
-  font-size: 36px;
-  margin: 45px 10px 10px 0px;
-  text-align: center;
-}
-.promotion-container .promotion .descript {
-  background-image: url(/image/home/descript.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.promotion-container .promotion .descript p {
-  font-size: 24px;
-  width: 45%;
-  margin-top: 130px;
-  margin-left: 110px;
-}/*# sourceMappingURL=home.css.map */
->>>>>>> b6f01e2cd609ac6a18ad3372963b65898ca1e00b

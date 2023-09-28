@@ -298,29 +298,34 @@ body{
     //--------------------- Product ----------------
 
     .product-title{
-        margin: 100px 0px 50px 50px;
+        margin: 100px 0px 50px 20px;
     }
     .slide-container{
         .product-slide{
-            margin: 0px 70px;
+            margin: 0px 20px;
             div{
                 img{
-                    width: 200px;
-                    height: 200px;
+                    width: 120px;
+                    height: 120px;
                 }
+                p{
+                    font-size: 14px;
+                }
+            }
+            .milk-tea{
+                margin-left: 15px;
+            }
+            .bakery{
+                margin-left: 15px;
             }
         }
         i{
-            width: 30px;
-            height: 30px;
+            display: none;
+ 
     
         }
-        i:first-child{
-            margin-left: 50px;
-        }
-        i:last-child{
-            margin-right: 50px;
-        }
+
+        
     }
 
     //  ----------------------- Promotion ----------------------
@@ -354,16 +359,16 @@ body{
     }
 
     .promo-container{
-        margin: 50px;
+        margin: 50px 20px;
         h2{
-            margin: 50px 0px;
+            margin: 20px 0px;
         }
         .promo{
             display: flex;
             justify-content: space-between;
             img{
                 width: 30%;
-                height: 400px;
+                height: 200px;
                 border-radius: 5px;
             }
         }

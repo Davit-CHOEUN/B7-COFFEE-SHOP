@@ -66,3 +66,42 @@ nav{
     }
     
 }
+
+@media(min-width:0px) and (max-width:430px){
+    nav{
+        padding: 10px 10px;
+        ul{
+            display: flex;
+            position: relative;
+            li{
+                list-style: none;
+                margin-left: 20px;
+            }
+            li:hover .dropdown{
+                display: block;
+            }
+        }
+        .logo{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            
+        }
+        .dropdown{
+            display: none;
+            position: absolute;
+            background-color:  #79767688;
+            margin: 0%;
+            padding: 13px 10px;
+            left: 100;
+            border-radius: 0px 0px 5px 5px;
+            li{
+                margin: 0%;
+                padding: 7px 0px;
+                a{
+                    font-size: 12px;
+                }
+            }
+        }    
+    }
+}
