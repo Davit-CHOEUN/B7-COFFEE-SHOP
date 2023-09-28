@@ -31,7 +31,6 @@ nav .dropdown {
   margin: 0%;
   padding: 13px 10px;
   left: 100;
-  top: 100%;
   border-radius: 0px 0px 5px 5px;
 }
 nav .dropdown li {
@@ -57,6 +56,43 @@ nav a:hover::before {
   width: 100%;
 }
 
+@media (min-width: 0px) and (max-width: 430px) {
+  nav {
+    padding: 10px 10px;
+  }
+  nav ul {
+    display: flex;
+    position: relative;
+  }
+  nav ul li {
+    list-style: none;
+    margin-left: 20px;
+  }
+  nav ul li:hover .dropdown {
+    display: block;
+  }
+  nav .logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  nav .dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgba(121, 118, 118, 0.5333333333);
+    margin: 0%;
+    padding: 13px 10px;
+    left: 100;
+    border-radius: 0px 0px 5px 5px;
+  }
+  nav .dropdown li {
+    margin: 0%;
+    padding: 7px 0px;
+  }
+  nav .dropdown li a {
+    font-size: 12px;
+  }
+}
 body {
   font-family: sans-serif;
   margin: 0%;
@@ -69,7 +105,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 50px 30px 30px 30px;
 }
 
 a {
@@ -98,6 +134,28 @@ a {
   color: white;
 }
 
+@media (min-width: 0px) and (max-width: 430px) {
+  footer {
+    padding: 30px 20px 30px 20px;
+  }
+  footer a {
+    font-size: 10px;
+  }
+  footer .content a {
+    margin: 0px 10px;
+  }
+  footer .social {
+    margin-top: 20px;
+  }
+  footer .social img {
+    width: 30px;
+    margin: 0px 20px;
+  }
+  footer .social .tw {
+    width: 40px;
+    margin: 0px 20px;
+  }
+}
 body {
   background-color: rgb(226, 226, 226);
 }

@@ -28,3 +28,66 @@
         }
     }
 }
+
+@media(min-width:431px) and (max-width:834px){
+    
+    .costumer-feedback{
+        margin: 100px 50px;
+        height: 390px;
+        display: flex;
+        flex-wrap: wrap;
+        .costumer{
+            margin-top: 30px;
+            padding: 20px;
+            width: 43%;
+            height: 150px;
+            img{
+                height: 150px;
+            }
+            .feedback{
+                justify-content: center;
+                align-items: self-end;
+                p{
+                    font-size: 14px;
+                }
+                i{
+                    width: 10px;
+                    margin-left: 5px;
+                }
+            }
+        }
+        .custumer3{
+            margin-left: 26%;
+        }
+    }
+}
+@media(min-width:0px) and (max-width:430px){
+    
+    .costumer-feedback{
+        margin: 80px 20px;
+        height: 650px;
+        display: flex;
+        flex-wrap: wrap;
+        .costumer{
+            margin-top: 30px;
+            padding: 20px;
+            width: 100%;
+            height: 150px;
+            img{
+                height: 150px;
+            }
+            .feedback{
+                justify-content: center;
+                align-items: self-end;
+                p{
+                    font-size: 14px;
+                }
+                i{
+                    width: 10px;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+    }
+}
