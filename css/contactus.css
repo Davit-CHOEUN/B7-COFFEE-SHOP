@@ -1,29 +1,48 @@
-.navbar {
-  background-color: rgba(97, 94, 94, 0.4784313725);
-  padding: 10px;
+nav {
+  margin: 0%;
+  padding: 10px 100px;
+  background-color: rgba(121, 118, 118, 0.5333333333);
   display: flex;
   justify-content: space-between;
   position: sticky;
   top: 0;
 }
-.navbar .logo {
+nav ul {
+  display: flex;
+  position: relative;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 70px;
+}
+nav ul li:hover .dropdown {
+  display: block;
+}
+nav .logo {
   width: 50px;
-  height: auto;
-  margin-left: 100px;
+  height: 50px;
   border-radius: 50%;
 }
-.navbar ul {
-  display: flex;
-  list-style: none;
-  margin-right: 50px;
+nav .dropdown {
+  display: none;
+  position: absolute;
+  background-color: rgba(121, 118, 118, 0.5333333333);
+  margin: 0%;
+  padding: 13px 10px;
+  left: 100;
+  top: 100%;
+  border-radius: 0px 0px 5px 5px;
 }
-.navbar a {
+nav .dropdown li {
+  margin: 0%;
+  padding: 7px 0px;
+}
+nav a {
   color: white;
-  margin-right: 50px;
   text-decoration: none;
   position: relative;
 }
-.navbar a::before {
+nav a::before {
   content: "";
   position: absolute;
   top: 100%;
@@ -33,7 +52,7 @@
   background-color: white;
   transition: 0.3s;
 }
-.navbar a:hover::before {
+nav a:hover::before {
   width: 100%;
 }
 
@@ -174,6 +193,7 @@ body {
   margin: 10px 21px;
 }
 
+<<<<<<< HEAD
 @media (max-width: 834px) {
   .bg {
     height: 100%;
@@ -224,3 +244,8 @@ body {
     padding: 10px;
   }
 }/*# sourceMappingURL=contactus.css.map */
+=======
+.about-us {
+  display: none;
+}
+>>>>>>> 79ea3ba2ea737fc3b7da86479ff42765d5cf7770

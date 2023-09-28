@@ -1,25 +1,53 @@
-.navbar{
-    background-color: #615e5e7a;
-    padding: 10px;
+
+
+
+
+
+
+
+nav{
+    margin: 0%;
+    padding: 10px 100px;
+    background-color: #79767688;
     display: flex;
     justify-content: space-between;
     position: sticky;
     top: 0;
-
-    .logo{
-        width: 50px;
-        height: auto;
-        margin-left: 100px;
-        border-radius: 50%;
-    }
     ul{
         display: flex;
-        list-style: none;
-        margin-right: 50px;
+        position: relative;
+        li{
+            list-style: none;
+            margin-left: 70px;
+        }
+        li:hover .dropdown{
+            display: block;
+        }
     }
+    .logo{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        
+    }
+    .dropdown{
+        display: none;
+        position: absolute;
+        background-color:  #79767688;
+        margin: 0%;
+        padding: 13px 10px;
+        left: 100;
+        top: 100%;
+        border-radius: 0px 0px 5px 5px;
+        li{
+            margin: 0%;
+            padding: 7px 0px;
+        }
+    }
+    
+    
     a{
         color: white;
-        margin-right: 50px;
         text-decoration: none;
         position: relative;
 
@@ -37,4 +65,5 @@
     a:hover::before{
         width: 100%;
     }
+    
 }
