@@ -91,7 +91,7 @@ body {
         }
 
         .rating-star {
-            
+
             h4 {
                 color: white;
                 padding: 10px 0 0 23px;
@@ -118,4 +118,93 @@ body {
             margin: 10px 21px;
         }
     }
+}
+
+@media(max-width:834px) {
+    
+    .bg {
+        height: 100%;
+        padding-bottom: 70px;
+    }
+
+    .contact {
+
+        .news {
+
+            h3 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .contact {
+
+        form {
+            width: 400px;
+
+            h3 {
+                font-size: 22px;
+            }
+
+            .index-Box {
+
+                #messege {
+                    background-color: #1f1e1e6b;
+                }
+            }
+        }
+    }
+
+    .footer-contact {
+        height: 250px;
+    }
+}
+
+@media(max-width:428px) {
+
+    .bg {
+        width: 100%;
+
+        .contact {
+
+            .news {
+                display: none;
+            }
+
+            form {
+                width: 75%;
+
+                .index-Box {
+
+                    input {
+                        width: 100%;
+                        padding: 10px;
+
+                    }
+
+                    textarea {
+                        height: 40px;
+                        padding: 0;
+                    }
+                }
+
+                .rating-star {
+
+                    .rating {
+                        gap: 5px;
+                    }
+                }
+
+                button {
+                    width: 90%;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
 }
