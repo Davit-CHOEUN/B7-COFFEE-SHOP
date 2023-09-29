@@ -125,7 +125,7 @@ nav a:hover::before {
   text-align: justify;
 }
 .costumer-feedback .costumer .feedback i {
-  color: rgb(212, 212, 7);
+  color: #FFA950;
 }
 
 @media (min-width: 431px) and (max-width: 834px) {
@@ -188,7 +188,7 @@ nav a:hover::before {
   }
 }
 footer {
-  background-color: black;
+  background-color: rgb(19, 19, 19);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -301,7 +301,7 @@ body {
   margin-top: 50px;
 }
 .product-title span {
-  color: #FF8639;
+  color: #FFA950;
 }
 
 .slide-container {
