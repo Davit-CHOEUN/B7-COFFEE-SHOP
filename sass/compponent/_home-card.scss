@@ -3,15 +3,17 @@
     justify-content: space-between;
     margin: 100px;
     .costumer{
-        background-color: rgb(146, 135, 135);
+        background-color: rgb(26, 25, 25);
         display: flex;
         width: 31%;
         height: 165px;
         margin: 0%;
         padding: 10px;
+        border-radius: 10px;
         img{
             width: 100px;
             height: 165px;
+            border-radius: 7px;
         }
         .feedback{
             display: flex;
@@ -21,6 +23,9 @@
             width: 100%;
             margin: 0%;
             padding: 10px;
+            p{
+                text-align: justify;
+            }
             i{
                 color: rgb(212, 212, 7);
 
