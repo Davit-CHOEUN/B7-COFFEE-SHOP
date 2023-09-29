@@ -1,10 +1,11 @@
 nav {
+  width: 85.1%;
   margin: 0%;
   padding: 10px 100px;
   background-color: rgba(58, 58, 58, 0.8784313725);
   display: flex;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   top: 0;
 }
 nav ul {
@@ -156,7 +157,7 @@ a {
   }
 }
 body {
-  background-color: rgb(224, 224, 224);
+  background-color: rgb(226, 226, 226);
 }
 
 .bg {
@@ -175,7 +176,6 @@ body {
   width: 40%;
   padding: 20px;
   display: flex;
-  border-radius: 10px;
 }
 .bestseller img {
   width: 200px;
@@ -197,19 +197,74 @@ h1 {
   margin: 50px;
   background-color: white;
   width: 300px;
-  border-radius: 5px;
+  height: 420px;
 }
 .menu-hot-coffee div img {
   width: 200px;
 }
+.menu-hot-coffee div h3 {
+  font-size: medium;
+}
 .menu-hot-coffee div .hotcup {
   margin-top: 85px;
+  width: 160px;
+}
+.menu-hot-coffee div .poun {
+  margin-top: 70px;
 }
 
-.ice-coffee {
-  margin-top: 100px;
-}
-
-.about-us {
-  display: none;
+@media (max-width: 768px) {
+  body {
+    background-color: rgb(167, 81, 81);
+  }
+  .bg {
+    width: 800px;
+    height: 300px;
+  }
+  .navbar .logo {
+    margin-left: 100px;
+  }
+  .bestseller .best {
+    font-size: 7px;
+    width: 290px;
+  }
+  .bestseller img {
+    width: 150px;
+    margin-left: 0px;
+  }
+  .menu-hot-coffee {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .menu-hot-coffee div {
+    margin-left: 0px;
+    background-color: white;
+    width: 180px;
+    height: 320px;
+  }
+  .menu-hot-coffee div img {
+    width: 100px;
+  }
+  .menu-hot-coffee div .hotcup {
+    margin-top: 30px;
+    width: 100px;
+    height: 80px;
+  }
+  .menu-hot-coffee div .espresso {
+    width: 100px;
+  }
+  .menu-hot-coffee div h3 {
+    font-size: 15px;
+  }
+  .menu-hot-coffee .div-line-1 {
+    margin-left: 55px;
+  }
+  .menu-hot-coffee .four {
+    width: 100px;
+  }
+  h1 {
+    font-size: 20px;
+  }
 }

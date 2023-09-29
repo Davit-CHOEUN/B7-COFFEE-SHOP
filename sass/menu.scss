@@ -2,8 +2,7 @@
 @import "main";
 @import "compponent/footer";
 body{
-    background-color: rgb(224, 224, 224);
-    // background-image: url(/image/home/transparent.png);
+    background-color: rgb(226, 226, 226);
 }
 .bg{
     width: 100%;
@@ -13,14 +12,13 @@ body{
     background-repeat: no-repeat;
 }
 .bestseller{
-
     margin: 100px;
     .best{
         background-color:white;
         width: 40%;
         padding: 20px;
         display: flex;
-        border-radius: 10px;
+
     }
     img{
         width: 200px;
@@ -40,21 +38,86 @@ h1{
         margin: 50px;
         background-color: white;
         width: 300px;
-        border-radius: 5px;
+        height: 420px;
         img{
             width: 200px;
         }
+        h3{
+            font-size:medium ;
+        }
         .hotcup{
             margin-top: 85px;
+            width: 160px;
             
         }
-       
+        .poun{
+            margin-top: 70px;
+        }
+    
     }
   
 }
-.ice-coffee{
-    margin-top: 100px;
-}
-.about-us{
-    display: none;
+
+// ....tablet...
+@media(max-width :768px){
+    body{
+        background-color: rgb(167, 81, 81);
+    }
+    .bg{
+        width: 800px;
+        height: 300px;
+    }
+    .navbar{
+        .logo{
+            margin-left: 100px;
+        }
+    }
+    .bestseller{
+        .best{
+          font-size: 7px;
+            width: 290px;
+            
+        }
+        img{
+            width: 150px;
+            margin-left: 0px;
+        }
+    }
+    .menu-hot-coffee  {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-left: 0px;
+        text-align: center;
+        div{
+            margin-left:0px;
+            background-color: white;
+            width: 180px;
+            height: 320px;
+            img{
+                width: 100px;
+            }
+            .hotcup{
+                margin-top: 30px;
+                width: 100px;
+                height: 80px;
+                
+            }
+            .espresso{
+                width: 100px;
+            }
+            h3{
+                font-size: 15px;
+            }
+        }
+        .div-line-1{
+            margin-left: 55px;
+        }
+        .four{
+            width: 100px;
+        }
+      
+    }
+    h1{
+        font-size: 20px;
+    }
 }
