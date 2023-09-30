@@ -54,6 +54,16 @@
                 height: 150px;
             }  
         }
+        img:hover{
+            width: 110px;
+            height: 175px;
+            @include responsive('tablet') {
+                height: 160px;
+            }  
+            @include responsive('mobile') {
+                height: 160px;
+            }  
+        }
         .feedback{
             display: flex;
             flex-direction: column;

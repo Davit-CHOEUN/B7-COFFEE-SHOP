@@ -95,6 +95,16 @@ body{
             height: 35vh;
         }
     }
+    .enviroment:hover{
+        width: 55%;
+        height: 60vh;
+        @include responsive('tablet') {
+            height: 45vh;
+        }
+        @include responsive('mobile') {
+            height: 40vh;
+        }
+    }
 }
 
 // ---------------------------------- Product ----------------------
@@ -140,6 +150,18 @@ body{
                 @include responsive('mobile') {
                     width: 180px;
                     height: 150px;
+                }
+            }
+            img:hover{
+                width: 280px;
+                height: 270px;
+                @include responsive('tablet') {
+                    width: 360px;
+                    height: 320px;
+                }
+                @include responsive('mobile') {
+                    width: 200px;
+                    height: 170px;
                 }
             }
             p{
@@ -196,10 +218,31 @@ body{
                 
             }
         }
+        .promotion:hover{
+            width: 520px;
+            height: 470px;
+            @include responsive('tablet') {
+                width: 320px;
+                height: 370px;
+            }
+            @include responsive('mobile') {
+                width: 410px;
+                height: 370px;
+                
+            }
+        }
         .limit{
             @include responsive('tablet') {
                 width: 390px;
                 height: 350px;
+            }
+        }
+        .limit:hover{
+            width: 610px;
+            height: 470px;
+            @include responsive('tablet') {
+                width: 410px;
+                height: 370px;
             }
         }
     }
