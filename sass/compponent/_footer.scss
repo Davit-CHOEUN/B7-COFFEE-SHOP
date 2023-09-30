@@ -1,12 +1,28 @@
+@import "variable";
+@import "../mixins/responsive";
 footer{
-    background-color: black;
+    background-color: $main-color;
     padding: 0px 100px;
+    @include responsive('tablet') {
+        padding: 0px 50px;
+    }
+    @include responsive('mobile') {
+        padding: 10px 20px;
+    }
     .footer-container1{
         display: flex;
         justify-content: space-between;
         .footer-logo{
             width: 200px;
             height: 100px;
+            @include responsive('tablet') {
+                width: 150px;
+                height: 70px;
+            }
+            @include responsive('mobile') {
+                width: 60px;
+                height: 30px;
+            }
         }
         div{
             display: flex;
@@ -15,6 +31,24 @@ footer{
         }
         .content{
             margin-top: 60px;
+            @include responsive('tablet') {
+                margin-top: 47px;
+            }
+            @include responsive('mobile') {
+                margin-top: 20px;
+            }
+            a{
+                margin: 0px 10px;
+                @include responsive('tablet') {
+                    margin: 0px 5px;
+                    font-size: 14px;
+                }
+                @include responsive('mobile') {
+                    margin: 0px 2.5px;
+                    font-size: 8px;
+                }
+
+            }
         }
         .social{
            
@@ -22,12 +56,34 @@ footer{
                 width: 30px;
                 margin: 0px 10px;
                 margin-top: 45px;
+                @include responsive('tablet') {
+                    width: 20px;
+                    margin: 0px 5px;
+                    margin-top: 45px;
+                }
+                @include responsive('mobile') {
+                    width: 15px;
+                    margin: 0px 2.5px;
+                    margin-top: 15px;
+                }
             }
             .tw{
                 width: 50px;
                 height: 50px;
                 margin: 0px 10px;
                 margin-top: 35px;
+                @include responsive('tablet') {
+                    width: 35px;
+                    height: 35px;
+                    margin: 0px 5px;
+                    margin-top: 38px;
+                }
+                @include responsive('mobile') {
+                    width: 25px;
+                    height: 25px;
+                    margin: 0px 2.5px;
+                    margin-top: 11px;
+                }
             }
         }
 
@@ -36,34 +92,9 @@ footer{
 }
 a{
     text-decoration: none;
-    color: white;
+    color: $text-color;
     cursor: pointer;
 }
-.content a{
-    margin: 0px 10px;
-}
 
 
 
-@media(min-width:0px) and (max-width:430px){
-    footer{
-        padding: 30px 20px 30px 20px;
-        a{
-            font-size: 10px;
-        }
-        .content a{
-            margin: 0px 10px;
-        }
-        .social{
-            margin-top: 20px;
-            img{
-                width: 30px;
-                margin: 0px 20px;
-            }
-            .tw{
-                width: 40px;
-                margin: 0px 20px;
-            }
-        }
-    }
-}

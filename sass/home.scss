@@ -1,6 +1,8 @@
 @import "compponent/nav";
 @import "compponent/home-card";
 @import "compponent/footer";
+@import "compponent/variable";
+@import "mixins/responsive";
 @import "main";
 body{
     background-color: black;
@@ -9,6 +11,8 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    padding: 0%;
+    margin: 0%;
 }
 .bg{
     width: 100%;
@@ -16,6 +20,14 @@ body{
     background: url(/image/home/homepage-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 0%;
+    margin: 0%;
+    @include responsive('tablet') {
+        height: 38vh;
+    }
+    @include responsive('mobile') {
+        height: 28vh;
+    }
     
     
 }
@@ -25,9 +37,15 @@ body{
 #about-us{
     text-align: center;
     margin-top: 100px;
-    color: white;
+    color: $text-color;
     span{
-        color: #FF8639;
+        color: $primary-color;
+    }
+    @include responsive('tablet') {
+        margin-top: 70px;
+    }
+    @include responsive('mobile') {
+        margin-top: 50px;
     }
     
 }
@@ -35,19 +53,34 @@ body{
     display: flex;
     justify-content: space-between;
     margin: 20px 100px;
-    background-color: black;
+    background-color: $main-color;
+    @include responsive('tablet') {
+        margin: 50px;
+    }
+    @include responsive('mobile') {
+        margin: 20px;
+    }
     .description{
         width: 48%;
         padding: 20px;
+        @include responsive('mobile') {
+            padding: 10px;
+        }
         h2{
-            color: white;
+            color: $text-color;
             text-align: left;
+            @include responsive('mobile') {
+                font-size: 20px;
+            }
         }
         p{
             font-size: 22px;
             text-align: justify;
             margin: 0%;
-            color: white;
+            color: $text-color;
+            @include responsive('mobile') {
+                font-size: 12px;
+            }
         }
     }
 
@@ -55,6 +88,12 @@ body{
         width: 48%;
         height: 55vh;
         border-radius: 5px;
+        @include responsive('tablet') {
+            height: 40vh;
+        }
+        @include responsive('mobile') {
+            height: 35vh;
+        }
     }
 }
 
@@ -63,10 +102,10 @@ body{
 
 .product-title{
     span{
-        color: #FFA950;
+        color: $secondary-color;
     }
    
-  margin-top: 50px;
+  margin-top: 0px;
 }
 .slide-container{
     width: 100%;
@@ -75,17 +114,40 @@ body{
         display: flex;
         justify-content: space-between;
         overflow: hidden;
+        @include responsive('tablet') {
+        margin: 0px 50px;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        }
+        @include responsive('mobile') {
+            margin: 0px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
         div{
-            background-color: black;
+            background-color: $main-color;
             border-radius: 5px;
             img{
                 width: 250px;
                 height: 240px;
                 border-radius: 5px 5px 0px 0px;
+                @include responsive('tablet') {
+                    width: 340px;
+                    height: 300px;
+                }
+                @include responsive('mobile') {
+                    width: 180px;
+                    height: 150px;
+                }
             }
             p{
                 text-align: center;
-                color: #FF8639;
+                color: $primary-color;
+                @include responsive('mobile') {
+                    font-size: 12px;
+                }
             }
         }
     
@@ -98,8 +160,15 @@ body{
 
 .promo-container{
     margin: 100px;
+    @include responsive('tablet') {
+        margin: 50px 50px 0px 50px;
+    }
+    @include responsive('mobile') {
+        margin: 30px 20px 0px 20px;
+    }
+
     span{
-        color: #FFA950;
+        color: $secondary-color;
     }
     .promo{
         display: flex;
@@ -107,71 +176,41 @@ body{
         height: 450px;
         margin-top: 0px;
         padding-top: 10px;
+        @include responsive('mobile') {
+            display: flex;
+            flex-direction: column;
+            height: 640px;
+            row-gap: 20px;
+        }
         img{
             border-radius: 10px;
         }
+        .promotion{
+            @include responsive('tablet') {
+                width: 300px;
+                height: 350px;
+            }
+            @include responsive('mobile') {
+                width: 390px;
+                height: 350px;
+                
+            }
+        }
+        .limit{
+            @include responsive('tablet') {
+                width: 390px;
+                height: 350px;
+            }
+        }
     }
  
 
 }
-@media(min-width:0px) and (max-width:430px){
-
-    .bg{
-        width: 430px;
-        height: 20vh;
+.f-back{
+    span{
+        color: white;
     }
-
-    //-------------------- Aboutus ----------------
-
-    .aboutus{
-        margin: 20px;
-        height: 775px;
-        .description{
-            p{
-                font-size: 20px;
-            }
-        }
-        .enviroment{
-            height: 65vh;
-        }
-    }
-
-    //--------------------- Product ----------------
-
-    .product-title{
-        margin: 100px 0px 50px 20px;
-    }
-    .slide-container{
-        .product-slide{
-            margin: 0px 20px;
-            div{
-                img{
-                    width: 120px;
-                    height: 120px;
-                }
-                p{
-                    font-size: 14px;
-                }
-            }
-            .milk-tea{
-                margin-left: 15px;
-            }
-            .bakery{
-                margin-left: 15px;
-            }
-        }
-        i{
-            display: none;
- 
-    
-        }
-
-        
-    }
-
-    //  ----------------------- Promotion ----------------------
-
-
 }
+
 
 
