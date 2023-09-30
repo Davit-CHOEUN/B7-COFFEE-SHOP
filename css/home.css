@@ -96,10 +96,10 @@ nav a:hover::before {
 .costumer-feedback {
   display: flex;
   justify-content: space-between;
-  margin: 100px;
+  margin: 25px 100px 100px 100px;
 }
 .costumer-feedback .costumer {
-  background-color: rgb(26, 25, 25);
+  background-color: black;
   display: flex;
   width: 31%;
   height: 165px;
@@ -188,12 +188,34 @@ nav a:hover::before {
   }
 }
 footer {
-  background-color: rgb(19, 19, 19);
+  background-color: black;
+  padding: 0px 100px;
+}
+footer .footer-container1 {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer-container1 .footer-logo {
+  width: 200px;
+  height: 100px;
+}
+footer .footer-container1 div {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 50px 30px 30px 30px;
+}
+footer .footer-container1 .content {
+  margin-top: 60px;
+}
+footer .footer-container1 .social img {
+  width: 30px;
+  margin: 0px 10px;
+  margin-top: 45px;
+}
+footer .footer-container1 .social .tw {
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px;
+  margin-top: 35px;
 }
 
 a {
@@ -203,23 +225,7 @@ a {
 }
 
 .content a {
-  margin: 0px 20px;
-}
-
-.social {
-  margin-top: 30px;
-}
-.social img {
-  width: 30px;
-  margin: 0px 20px;
-}
-.social .tw {
-  width: 40px;
-  margin: 0px 20px;
-}
-
-.line p {
-  color: white;
+  margin: 0px 10px;
 }
 
 @media (min-width: 0px) and (max-width: 430px) {
@@ -252,6 +258,11 @@ body {
 
 body {
   background-color: black;
+  background-image: url(/image/home/coffee-shop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .bg {
@@ -275,7 +286,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 20px 100px;
-  background-color: rgba(19, 18, 18, 0.87);
+  background-color: black;
 }
 .aboutus .description {
   width: 48%;
@@ -306,7 +317,6 @@ body {
 
 .slide-container {
   width: 100%;
-  position: relative;
 }
 .slide-container .product-slide {
   margin: 0px 100px;
@@ -315,17 +325,17 @@ body {
   overflow: hidden;
 }
 .slide-container .product-slide div {
-  background-color: rgba(19, 18, 18, 0.87);
-  padding: 20px;
+  background-color: black;
   border-radius: 5px;
 }
 .slide-container .product-slide div img {
-  width: 225px;
-  height: 225px;
-  border-radius: 5px;
+  width: 250px;
+  height: 240px;
+  border-radius: 5px 5px 0px 0px;
 }
 .slide-container .product-slide div p {
   text-align: center;
+  color: #FF8639;
 }
 
 .promo-container {
@@ -338,8 +348,8 @@ body {
   display: flex;
   justify-content: space-between;
   height: 450px;
-  margin-top: 20px;
-  padding-top: 30px;
+  margin-top: 0px;
+  padding-top: 10px;
 }
 .promo-container .promo img {
   border-radius: 10px;

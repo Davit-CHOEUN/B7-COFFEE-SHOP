@@ -4,6 +4,11 @@
 @import "main";
 body{
     background-color: black;
+    background-image: url(/image/home/coffee-shop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 .bg{
     width: 100%;
@@ -30,7 +35,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin: 20px 100px;
-    background-color: rgba(19, 18, 18, 0.87);
+    background-color: black;
     .description{
         width: 48%;
         padding: 20px;
@@ -65,23 +70,22 @@ body{
 }
 .slide-container{
     width: 100%;
-    position: relative;
     .product-slide{
         margin: 0px 100px;
         display: flex;
         justify-content: space-between;
         overflow: hidden;
         div{
-            background-color: rgba(19, 18, 18, 0.87);
-            padding: 20px;
+            background-color: black;
             border-radius: 5px;
             img{
-                width: 225px;
-                height: 225px;
-                border-radius: 5px;
+                width: 250px;
+                height: 240px;
+                border-radius: 5px 5px 0px 0px;
             }
             p{
                 text-align: center;
+                color: #FF8639;
             }
         }
     
@@ -92,8 +96,6 @@ body{
 //--------------------- Promotion ---------------
 
 
-
-// }
 .promo-container{
     margin: 100px;
     span{
@@ -103,15 +105,13 @@ body{
         display: flex;
         justify-content: space-between;
         height: 450px;
-        margin-top: 20px;
-        padding-top: 30px;
+        margin-top: 0px;
+        padding-top: 10px;
         img{
             border-radius: 10px;
         }
     }
  
-    
-
 
 }
 @media(min-width:0px) and (max-width:430px){
