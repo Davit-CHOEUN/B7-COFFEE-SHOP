@@ -1,78 +1,68 @@
 @import "compponent/nav";
 @import "main";
 @import "compponent/footer";
-@import "mixins/responsive";
-
 body{
     background-color: rgb(226, 226, 226);
 }
 .bg{
     width: 100%;
     height: 85vh;
-    background: url(/image/menu/coffeemenu.png);
+    background: url(/image/menu/cakesss.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0%;
     margin: 0%;
     @include responsive('tablet') {
-        height: 37vh;
+        height: 30vh;
+       
     }
     @include responsive('mobile') {
-        height: 55vh;
+        height: 45vh;
+        padding-top: 30px;
+       
     }
 }
 .bestseller{
     margin: 100px;
-    margin-left: 0px;
     display: flex;
     @include responsive('mobile') {
         margin-left: 0px;
-        display: grid;
-        grid-template-columns: auto;
-    }
+        
+       
+     }
     .best2{
-    margin-left:100px ;
-    @include responsive('tablet') {
-        margin-left: 40px;
+    margin-left:110px ;
     }
-    @include responsive('mobile') {
-        margin-left: 10px;
-    }
-}
     .best1{
-        margin-left: 90px;
-        @include responsive('tablet') {
-            margin-left: 20px;
-        }
-        @include responsive('mobile') {
-            margin-left: 10px;
-        }
+        margin-left: 15px;
     }
     .best{
         background-color:white;
-        width: 45%;
+        width: 40%;
         padding: 20px;
         display: flex;
         margin-top: 20px;
         @include responsive('tablet') {
-            width: 45%;
+            width: 75%;
         }
         @include responsive('mobile') {
-            width: 54%;
-        }
+            width: 327px;
+            margin-left: 10px;
+
+           
+         }
 
     }
     img{
         width: 200px;
         margin-left: 50px;
         margin-top: 50px;
-        @include responsive('tablet') {
-            height: 110px;
+        @include responsive('mobile') {
+            height: 150px;
             margin-left: 0px;
-            margin-right: 150px;
-            margin-top: 100px;
+            margin-top: 80px;
+          
         }
-
     }
 }
 h1{
@@ -92,8 +82,10 @@ h1{
             width: 250px;
         }
         @include responsive('mobile') {
-           margin-left: 0px;
-        }
+         margin-left: 0px;
+            
+           
+         }
         img{
             width: 200px;
         }
@@ -103,10 +95,6 @@ h1{
         .hotcup {
             margin-top: 85px;
             width: 160px;
-            @include responsive('tablet') {
-                width: 100px;
-            }
-            
             
         }
         .nitro{
@@ -122,10 +110,6 @@ h1{
             height: 190px;
             width: 300px;
             margin-top: 26px;
-            @include responsive('mobile') {
-                width: 250px;
-                margin-right:0px;
-            }
         }
         .blackforest{
             margin-top: 67px;
