@@ -1,8 +1,8 @@
 nav {
   width: 85.1%;
   margin: 0%;
-  padding: 10px 100px;
-  background-color: rgba(58, 58, 58, 0.8784313725);
+  padding: 0px 100px;
+  background-color: rgba(0, 0, 0, 0.768627451);
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -53,7 +53,7 @@ nav .logo {
 nav .dropdown {
   display: none;
   position: absolute;
-  background-color: rgba(58, 58, 58, 0.8784313725);
+  background-color: rgba(0, 0, 0, 0.768627451);
   margin: 0%;
   padding: 13px 10px;
   left: 100;
@@ -208,7 +208,7 @@ a {
 }
 
 body {
-  background-color: rgb(226, 226, 226);
+  background-color: rgba(236, 235, 235, 0.74);
 }
 
 .bg {
@@ -266,9 +266,10 @@ body {
   }
 }
 .bestseller img {
-  width: 200px;
+  width: 170px;
+  height: 170px;
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 110px;
 }
 @media screen and (max-width: 600px) {
   .bestseller img {
@@ -330,8 +331,9 @@ h1 {
 }
 .menu-hot-coffee div .blackforest {
   margin-top: 67px;
-  width: 150px;
-  height: 150px;
+  margin-bottom: 50px;
+  width: 120px;
+  height: 120px;
 }
 .menu-hot-coffee div .greens {
   width: 150px;
@@ -361,4 +363,8 @@ h1 {
   width: 126px;
   height: 160px;
   margin-top: 50px;
+}
+
+div {
+  border-radius: 10px;
 }
