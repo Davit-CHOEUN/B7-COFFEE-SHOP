@@ -208,7 +208,7 @@ a {
 }
 
 body {
-  background-color: rgb(226, 226, 226);
+  background-color: black;
 }
 
 .bg {
@@ -360,9 +360,6 @@ h1 {
     width: 250px;
     margin-right: 0px;
   }
-<<<<<<< HEAD
-}/*# sourceMappingURL=menu.css.map */
-=======
 }
 .menu-hot-coffee div .blackforest {
   margin-top: 67px;
@@ -397,5 +394,4 @@ h1 {
   width: 126px;
   height: 160px;
   margin-top: 50px;
-}
->>>>>>> 400854c2862a2a27260df8d4ea68b038833e4baa
+}/*# sourceMappingURL=menu.css.map */
