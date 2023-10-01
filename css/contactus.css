@@ -352,30 +352,39 @@ body {
     height: 250px;
   }
 }
-@media (max-width: 428px) {
+@media (max-width: 390px) {
   .bg {
-    width: 100%;
+    padding: 0;
+    margin: 0;
   }
-  .bg .contact .news {
+  .contact {
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 55px 0;
+    margin: 0;
+  }
+  .contact .news {
     display: none;
   }
-  .bg .contact form {
-    width: 100%;
-    margin-top: 140px;
+  .contact form h3 {
+    font-size: 23px;
   }
-  .bg .contact form .index-Box input {
-    width: 100%;
-    padding: 20px;
+  .contact form .index-Box {
+    margin: 4px;
   }
-  .bg .contact form .index-Box textarea {
+  .contact form .index-Box input {
+    width: 115%;
+    padding: 15px;
+  }
+  .contact form .index-Box textarea {
     height: 80px;
-    padding: 0;
   }
-  .bg .contact form .rating-star .rating {
+  .contact form .rating-star .rating {
     gap: 5px;
   }
-  .bg .contact form button {
-    width: 96%;
-    padding: 20px;
+  .contact form button {
+    width: 107%;
+    padding: 12px;
+    margin-top: 10px;
   }
 }
