@@ -75,16 +75,19 @@ nav a {
 }
 nav a::before {
   content: "";
+  background-color: #FF8639;
   position: absolute;
   top: 100%;
   left: 0%;
   width: 0%;
   height: 2px;
-  background-color: white;
   transition: 0.3s;
 }
 nav a:hover::before {
   width: 100%;
+}
+nav a:hover {
+  color: #FF8639;
 }
 
 body {
@@ -363,12 +366,8 @@ h1 {
   width: 126px;
   height: 160px;
   margin-top: 50px;
-<<<<<<< HEAD
 }
 
 div {
   border-radius: 10px;
 }
-=======
-}/*# sourceMappingURL=bakeri.css.map */
->>>>>>> 6fca71604f4b98fccab6bd09da403795ba409349
