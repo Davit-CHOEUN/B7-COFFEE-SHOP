@@ -1,8 +1,8 @@
 nav {
   width: 85.1%;
   margin: 0%;
-  padding: 10px 100px;
-  background-color: rgba(58, 58, 58, 0.8784313725);
+  padding: 0px 100px;
+  background-color: rgba(0, 0, 0, 0.768627451);
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -53,7 +53,7 @@ nav .logo {
 nav .dropdown {
   display: none;
   position: absolute;
-  background-color: rgba(58, 58, 58, 0.8784313725);
+  background-color: rgba(0, 0, 0, 0.768627451);
   margin: 0%;
   padding: 13px 10px;
   left: 100;
@@ -354,12 +354,20 @@ body {
 }
 @media screen and (max-width: 1165px) {
   .bg {
-    height: 38vh;
+    background-image: url(/image/home/temblet-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1180px;
   }
 }
 @media screen and (max-width: 600px) {
   .bg {
-    height: 28vh;
+    background-image: url(/image/home/moble-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
   }
 }
 
@@ -493,6 +501,18 @@ body {
   background-color: black;
   border-radius: 5px;
 }
+@media screen and (max-width: 1165px) {
+  .slide-container .product-slide div {
+    padding: 0%;
+    width: 48%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .slide-container .product-slide div {
+    padding: 0%;
+    width: 48%;
+  }
+}
 .slide-container .product-slide div img {
   width: 250px;
   height: 240px;
@@ -500,13 +520,14 @@ body {
 }
 @media screen and (max-width: 1165px) {
   .slide-container .product-slide div img {
-    width: 340px;
+    width: 100%;
     height: 300px;
+    padding: 0%;
   }
 }
 @media screen and (max-width: 600px) {
   .slide-container .product-slide div img {
-    width: 180px;
+    width: 100%;
     height: 150px;
   }
 }
@@ -572,13 +593,13 @@ body {
 }
 @media screen and (max-width: 1165px) {
   .promo-container .promo .promotion {
-    width: 300px;
+    width: 45%;
     height: 350px;
   }
 }
 @media screen and (max-width: 600px) {
   .promo-container .promo .promotion {
-    width: 390px;
+    width: 100%;
     height: 350px;
   }
 }
@@ -600,7 +621,13 @@ body {
 }
 @media screen and (max-width: 1165px) {
   .promo-container .promo .limit {
-    width: 390px;
+    width: 52%;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .promo-container .promo .limit {
+    width: 100%;
     height: 350px;
   }
 }
