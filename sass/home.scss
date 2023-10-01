@@ -5,7 +5,7 @@
 @import "mixins/responsive";
 @import "main";
 body{
-    background-color: black;
+    background-color: $main-color;
     background-image: url(/image/home/coffee-shop.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -86,6 +86,9 @@ body{
             text-align: justify;
             margin: 0%;
             color: $text-color;
+            @include responsive('tablet') {
+                font-size: 20px;
+            }
             @include responsive('mobile') {
                 font-size: 12px;
             }
@@ -97,10 +100,10 @@ body{
         height: 55vh;
         border-radius: 5px;
         @include responsive('tablet') {
-            height: 40vh;
+            height: 43vh;
         }
         @include responsive('mobile') {
-            height: 35vh;
+            height: 37vh;
         }
     }
     .enviroment:hover{

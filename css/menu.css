@@ -75,16 +75,19 @@ nav a {
 }
 nav a::before {
   content: "";
+  background-color: #FF8639;
   position: absolute;
   top: 100%;
   left: 0%;
   width: 0%;
   height: 2px;
-  background-color: white;
   transition: 0.3s;
 }
 nav a:hover::before {
   width: 100%;
+}
+nav a:hover {
+  color: #FF8639;
 }
 
 body {
@@ -208,7 +211,7 @@ a {
 }
 
 body {
-  background-color: rgb(226, 226, 226);
+  background-color: rgba(236, 235, 235, 0.74);
 }
 
 .bg {
@@ -245,6 +248,9 @@ body {
 }
 .bestseller .best2 {
   margin-left: 100px;
+}
+.bestseller .best2 img {
+  width: 250px;
 }
 @media screen and (max-width: 1165px) {
   .bestseller .best2 {
@@ -394,4 +400,8 @@ h1 {
   width: 126px;
   height: 160px;
   margin-top: 50px;
-}/*# sourceMappingURL=menu.css.map */
+}
+
+div {
+  border-radius: 10px;
+}

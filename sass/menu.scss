@@ -1,10 +1,12 @@
 @import "compponent/nav";
+@import "compponent/variable";
 @import "main";
 @import "compponent/footer";
 @import "mixins/responsive";
 
 body{
-    background-color: rgb(226, 226, 226);
+    background-color: $menu-color;
+
 }
 .bg{
     width: 100%;
@@ -31,14 +33,17 @@ body{
         grid-template-columns: auto;
     }
     .best2{
-    margin-left:100px ;
-    @include responsive('tablet') {
-        margin-left: 40px;
+        margin-left:100px ;
+        img{
+            width: 250px;
+        }
+        @include responsive('tablet') {
+            margin-left: 40px;
+        }
+        @include responsive('mobile') {
+            margin-left: 10px;
+        }
     }
-    @include responsive('mobile') {
-        margin-left: 10px;
-    }
-}
     .best1{
         margin-left: 90px;
         @include responsive('tablet') {
@@ -49,7 +54,7 @@ body{
         }
     }
     .best{
-        background-color:white;
+        background-color:$text-color;
         width: 45%;
         padding: 20px;
         display: flex;
@@ -85,7 +90,7 @@ h1{
     text-align: center;
     div{
         margin: 50px;
-        background-color: white;
+        background-color: $text-color;
         width: 300px;
         height: 420px;
         @include responsive('tablet') {
@@ -165,5 +170,8 @@ h1{
        
     }
   
+}
+div{
+    border-radius: 10px;
 }
 

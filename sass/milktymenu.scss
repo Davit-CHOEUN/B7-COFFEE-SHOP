@@ -1,9 +1,10 @@
 @import "compponent/nav";
+@import "compponent/variable";
 @import "main";
 @import "compponent/footer";
 @import "mixins/responsive";
 body{
-    background-color: rgb(226, 226, 226);
+    background-color: $menu-color
 }
 .bg{
     width: 100%;
@@ -35,7 +36,7 @@ body{
         margin-left: 15px;
     }
     .best{
-        background-color:white;
+        background-color: $text-color;
         width: 40%;
         padding: 20px;
         display: flex;
@@ -52,9 +53,10 @@ body{
 
     }
     img{
-        width: 200px;
-        margin-left: 50px;
-        margin-top: 50px;
+        width: 250px;
+        height: 170px;
+        margin-left: 15px;
+        margin-top: 100px;
         @include responsive('mobile') {
             height: 150px;
             margin-left: 0px;
@@ -73,7 +75,7 @@ h1{
     text-align: center;
     div{
         margin: 50px;
-        background-color: white;
+        background-color: $text-color;
         width: 300px;
         height: 420px;
         @include responsive('tablet') {
@@ -116,8 +118,8 @@ h1{
             height: 150px;
         }
         .greens{
-            width: 150px;
-            margin-top: 12px;
+            width: 200px;
+            margin-top: 65px;
 
         }
         .trav{
@@ -150,4 +152,6 @@ h1{
     }
   
 }
-
+div{
+    border-radius: 10px;
+}

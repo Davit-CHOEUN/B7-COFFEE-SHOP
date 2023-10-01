@@ -75,16 +75,19 @@ nav a {
 }
 nav a::before {
   content: "";
+  background-color: #FF8639;
   position: absolute;
   top: 100%;
   left: 0%;
   width: 0%;
   height: 2px;
-  background-color: white;
   transition: 0.3s;
 }
 nav a:hover::before {
   width: 100%;
+}
+nav a:hover {
+  color: #FF8639;
 }
 
 @media screen and (max-width: 600px) {
@@ -430,6 +433,11 @@ body {
   margin: 0%;
   color: white;
 }
+@media screen and (max-width: 1165px) {
+  .aboutus .description p {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 600px) {
   .aboutus .description p {
     font-size: 12px;
@@ -442,12 +450,12 @@ body {
 }
 @media screen and (max-width: 1165px) {
   .aboutus .enviroment {
-    height: 40vh;
+    height: 43vh;
   }
 }
 @media screen and (max-width: 600px) {
   .aboutus .enviroment {
-    height: 35vh;
+    height: 37vh;
   }
 }
 .aboutus .enviroment:hover {
@@ -644,4 +652,4 @@ body {
 
 .f-back span {
   color: white;
-}/*# sourceMappingURL=home.css.map */
+}
