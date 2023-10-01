@@ -164,39 +164,45 @@ body {
     }
 }
 
-@media(max-width:428px) {
-    .bg {
-        width: 100%;
-        .contact {
-            .news {
-                display: none;
+@media(max-width:390px) {
+    .bg{
+        padding: 0;
+        margin: 0;
+    }
+    .contact {
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0 55px 0;
+        margin: 0;
+        .news {
+            display: none;
+        }
+        form {
+            h3{
+                font-size: 23px;
             }
-            form {
-                width: 100%;
-                margin-top: 140px;
-                .index-Box {
-                    input {
-                        width: 100%;
-                        padding: 20px;
-                    }
-                    textarea {
-                        height: 80px;
-                        padding: 0;
-                    }
+            .index-Box {
+                margin: 4px;
+                input {
+                    width: 115%;
+                    padding: 15px;
                 }
-
-                .rating-star {
-                    .rating {
-                        gap: 5px;
-                    }
+                textarea {
+                    height: 80px;
                 }
-
-                button {
-                    width: 96%;
-                    padding: 20px;
+            }
+            .rating-star {
+                .rating {
+                    gap: 5px;
                 }
+            }
+            button {
+                width: 107%;
+                padding: 12px;
+                margin-top: 10px;
             }
         }
     }
 }
+
 
