@@ -1,8 +1,8 @@
 nav {
   width: 85.1%;
   margin: 0%;
-  padding: 10px 100px;
-  background-color: rgba(58, 58, 58, 0.8784313725);
+  padding: 0px 100px;
+  background-color: rgba(0, 0, 0, 0.768627451);
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -53,7 +53,7 @@ nav .logo {
 nav .dropdown {
   display: none;
   position: absolute;
-  background-color: rgba(58, 58, 58, 0.8784313725);
+  background-color: rgba(0, 0, 0, 0.768627451);
   margin: 0%;
   padding: 13px 10px;
   left: 100;
