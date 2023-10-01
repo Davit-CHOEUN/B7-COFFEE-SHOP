@@ -15,8 +15,10 @@ body {
     background-image: url(/image/contactus/sky-coffe-cup-sunrise-thumbnail.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+
     .navbar {
         font-family: sans-serif;
+
         ul {
             margin-top: 15px;
         }
@@ -26,12 +28,15 @@ body {
 .contact {
     display: flex;
     justify-content: space-around;
+    margin-top: 70px;
+
     .news {
         background-color: rgba(236, 164, 101, 0.193);
         width: 400px;
         height: 170px;
         padding: 20px;
         margin: 100px 30px 0 50px;
+
         h3 {
             color: white;
             font-size: 30px;
@@ -39,6 +44,7 @@ body {
             text-align: center;
             padding: 20px;
         }
+
         p {
             color: white;
             font-size: 20px;
@@ -48,21 +54,24 @@ body {
     form {
         width: 400px;
         margin: 70px 50px 0 20px;
+
         h3 {
             color: white;
             font-size: 25px;
             justify-content: center;
             text-align: center;
         }
-        
+
         .index-Box {
             color: white;
             width: 84%;
             margin: 10px 0 0 21px;
+
             h4 {
                 padding: 5px 0;
                 margin: 0px;
             }
+
             input {
                 background-color: rgba(0, 0, 0, 0.356);
                 color: white;
@@ -71,6 +80,7 @@ body {
                 border-radius: 5px;
                 padding: 10px;
             }
+
             #messege {
                 background-color: rgba(0, 0, 0, 0);
                 color: white;
@@ -80,13 +90,14 @@ body {
                 padding: 10px;
             }
         }
-        
+
         .rating-star {
             h4 {
                 color: white;
                 padding: 10px 0 0 23px;
                 margin: 0;
             }
+
             .rating {
                 width: 150px;
                 display: flex;
@@ -108,53 +119,103 @@ body {
         }
     }
 }
-@media(max-width:1280px){
+
+@media(max-width:1280px) {
     .bg {
-        height: 80vh;
+        height: 100vh;
     }
+
     .contact {
         padding: 30px;
         margin: 40px;
+
+        form {
+            h3 {
+                font-size: 30px;
+            }
+
+            .index-Box {
+                margin: 0;
+
+                h4 {
+                    font-size: 23px;
+                }
+
+                input {
+                    width: 105%;
+                    padding: 20px;
+                }
+
+                #messege {
+                    background-color: #1f1e1e6b;
+                }
+
+                .rating-star {
+                    h4 {
+                        font-size: 23px;
+                    }
+                }
+            }
+
+            button {
+                width: 100%;
+                padding: 15px;
+                margin: 0;
+                margin-top: 10px;
+            }
+        }
     }
 }
 
 @media(max-width:834px) {
     .bg {
+        background-image: url(/image/contactus/phone.jpg);
         width: 100%;
         height: 100%;
         padding: 250px 0 200px 0;
     }
+
     .contact {
+        margin: 0;
+
         .news {
-            width: 200px;
+            width: 350px;
+
             h3 {
-                font-size: 14px;
+                font-size: 20px;
             }
+
             p {
-                font-size: 14px;
+                font-size: 13px;
             }
         }
 
         form {
-            width: 400px;
+            width: 390px;
+            margin-top: 20px;
+
             h3 {
-                font-size: 32px;
+                font-size: 25px;
             }
+
             .index-Box {
                 margin: 0;
+
                 input {
-                    width: 100%;
-                    padding: 30px;
+                    width: 105%;
+                    padding: 20px;
                 }
+
                 #messege {
                     background-color: #1f1e1e6b;
                 }
             }
 
             button {
-                width: 100%;
-                padding: 20px;
+                width: 103%;
+                padding: 15px;
                 margin: 0;
+                margin-top: 10px;
             }
         }
     }
@@ -165,44 +226,64 @@ body {
 }
 
 @media(max-width:390px) {
-    .bg{
+    .bg {
+        background-image: url(/image/contactus/phone.jpg);
         padding: 0;
         margin: 0;
     }
+
     .contact {
-        justify-content: center;
-        align-items: center;
-        padding: 50px 0 55px 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
         margin: 0;
+
         .news {
-            display: none;
+            height: 50%;
+            width: 70%;
+            margin: 90px 40px 0 40px;
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 13px;
+            }
         }
+
         form {
-            h3{
+            width: 94%;
+            margin: 50px 20px 50px 20px;
+
+            h3 {
                 font-size: 23px;
             }
+
             .index-Box {
                 margin: 4px;
+
                 input {
-                    width: 115%;
-                    padding: 15px;
+                    width: 105%;
+                    padding: 10px;
                 }
+
                 textarea {
-                    height: 80px;
+                    height: 35px;
                 }
             }
+
             .rating-star {
                 .rating {
                     gap: 5px;
                 }
             }
+
             button {
-                width: 107%;
-                padding: 12px;
+                width: 95%;
+                padding: 10px;
                 margin-top: 10px;
             }
         }
     }
 }
-
-
